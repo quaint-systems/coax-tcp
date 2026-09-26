@@ -102,7 +102,7 @@ def main():
         sys.exit(f"parts JLC should fit are missing from the placement export: {absent}")
 
     with open(HERE / f"{NAME}-cpl.csv", "w", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(["Designator", "Mid X", "Mid Y", "Layer", "Rotation"])
         for ref in sorted(fitted, key=lambda r: (r.rstrip("0123456789"), int(r.lstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ")))):
             p = pos[ref]
@@ -113,7 +113,7 @@ def main():
     for ref, p in fitted.items():
         groups.setdefault(p["lcsc"], (p, []))[1].append(ref)
     with open(HERE / f"{NAME}-bom.csv", "w", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(["Comment", "Designator", "Footprint", "LCSC Part #"])
         for lcsc, (p, refs) in sorted(groups.items(), key=lambda g: g[1][1][0]):
             refs.sort(key=lambda r: (r.rstrip("0123456789"), int(r.lstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ"))))
