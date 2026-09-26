@@ -6,7 +6,7 @@ R5 R6 R11 R12,smt,C23140,UNI-ROYAL,0603WAF330JT5E,33R 1% 0603,
 R13 R14 R15 R16 R17 R18 R19 R20 R21 R23 R24,smt,C23204,UNI-ROYAL,0603WAF5600T5E,560R 1% 0603,
 C1 C4,smt,C14663,Yageo,CC0603KRX7R9BB104,100nF X7R 50V 0603,
 C2 C3,smt,C57112,FH,0603B103K500NT,10nF X7R 50V 0603,
-D1 D2 D3 D4 D5 D6 D7 D8 D9,smt,C89811,NCD,NCD0603Y2,LED yellow 0603,D1 (PWR) is yellow instead of green to stay on a Preferred part
+D1 D2 D3 D4 D5 D6 D7 D8 D9,smt,C89811,NCD,NCD0603Y2,LED yellow 0603,D1 (PWR) is yellow instead of green so it shares the TX/RX LEDs' line; the part is Extended at JLC
 D11 D12,smt,C2286,Hubei KENTO,KT-0603R,LED red 0603,
 U1,smt,C140249,Texas Instruments,DS34LV86TMX/NOPB,Quad RS-422 receiver SOIC-16,Per-pair active-high enables (MC3486 pinout)
 U2,smt,C1543778,Texas Instruments,DS34LV87TM/NOPB,Quad RS-422 driver SOIC-16,Per-pair active-high enables (MC3487 pinout); LCSC stock was only 100 on 2026-09-26
