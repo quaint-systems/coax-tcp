@@ -67,12 +67,16 @@ def gerbers(tmp):
     run("pcb", "export", "drill", "--output", str(out), "--format", "excellon",
         "--excellon-units", "mm", "--excellon-zeros-format", "decimal",
         "--excellon-oval-format", "alternate", "--drill-origin", "absolute",
-        "--excellon-separate-th", "--generate-map", "--map-format", "gerberx2", str(BOARD))
+        "--excellon-separate-th", str(BOARD))
+    # The zip holds only the layers and the drill files.  With the two drill
+    # map Gerbers and the job file included, JLC's uploader quoted this
+    # 2-layer board as 6 layers.
+    files = sorted(p for p in out.iterdir() if p.suffix != ".gbrjob")
     zpath = HERE / f"{NAME}-gerbers.zip"
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
-        for p in sorted(out.iterdir()):
+        for p in files:
             z.write(p, p.name)
-    return zpath, sorted(p.name for p in out.iterdir())
+    return zpath, [p.name for p in files]
 
 
 def placements(tmp):
