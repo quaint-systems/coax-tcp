@@ -4322,7 +4322,7 @@
 				)
 			)
 		)
-		(property "Part" "150060VS55040"
+		(property "Part" "150060YS55040"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
