@@ -1,0 +1,21 @@
+refs,assembly,lcsc,manufacturer,mpn,comment,note
+R1 R7,smt,C22787,UNI-ROYAL,0603WAF1200T5E,120R 1% 0603,
+R2 R3 R8 R9,smt,C22808,UNI-ROYAL,0603WAF1500T5E,150R 1% 0603,
+R4 R10,smt,C23193,UNI-ROYAL,0603WAF5100T5E,510R 1% 0603,
+R5 R6 R11 R12,smt,C23140,UNI-ROYAL,0603WAF330JT5E,33R 1% 0603,
+R13 R14 R15 R16 R17 R18 R19 R20 R21 R23 R24,smt,C23204,UNI-ROYAL,0603WAF5600T5E,560R 1% 0603,
+C1 C4,smt,C14663,Yageo,CC0603KRX7R9BB104,100nF X7R 50V 0603,
+C2 C3,smt,C57112,FH,0603B103K500NT,10nF X7R 50V 0603,
+D1 D2 D3 D4 D5 D6 D7 D8 D9,smt,C89811,NCD,NCD0603Y2,LED yellow 0603,D1 (PWR) is yellow instead of green to stay on a Preferred part
+D11 D12,smt,C2286,Hubei KENTO,KT-0603R,LED red 0603,
+U1,smt,C140249,Texas Instruments,DS34LV86TMX/NOPB,Quad RS-422 receiver SOIC-16,Per-pair active-high enables (MC3486 pinout)
+U2,smt,C1543778,Texas Instruments,DS34LV87TM/NOPB,Quad RS-422 driver SOIC-16,Per-pair active-high enables (MC3487 pinout); LCSC stock was only 100 on 2026-09-26
+SW1,smt,C455119,XUNPU,TS-1002S-09526C,Tact switch 6x6x9.5mm SMD,
+T1 T2,smt,C7040198,Murata,78602/8JC,Pulse transformer 1:1:1 786J,Not stocked at LCSC on 2026-09-26; select through JLC Global Sourcing or hand-fit
+J1 J2,tht,C22457552,Amphenol,B6252HB-NPP3G-50,BNC jack right angle,The part the footprint was drawn for; JLC hand-solders
+U3,none,,Raspberry Pi,Pico 2,Pico 2 in two 1x20 female sockets,Hand-fitted; not on the JLC order
+J3,none,,,,2x6 pin header,Ports 3/4 TTL header; not fitted
+J4,none,,,,USB-B,Do not place; a socketed Pico cannot reach its data pads
+D10 R22,none,,,,NET LED,Do not place; LED_NET has no driver since the second-port reroute
+H1 H2 H3 H4,none,,,,Mounting holes,
+TP2 TP3,none,,,,USB test pads,
