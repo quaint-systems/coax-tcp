@@ -8,7 +8,11 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "interface3")
+		(title "Liz 4174 Terminal Controller")
+		(date "2026-09-26")
+		(rev "v1")
+		(company "quaint-systems")
+		(comment 1 "Based on interface3 Rev 3 by Hans Hübner")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -5094,7 +5098,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 10.5 -25.5)
@@ -11150,7 +11154,7 @@
 				(pins "5" "4" "1" "3" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 15.12 7.41)
@@ -15787,8 +15791,8 @@
 			)
 		)
 	)
-	(gr_text "IBM 3270 Interface\nhttps://github.com/lowobservable/coax\ninterface3 - Rev 2 - Hans Hübner"
-		(at 117.856 129.54 0)
+	(gr_text "based on interface3 Rev 3 - Hans Hübner\nhttps://github.com/lowobservable/coax"
+		(at 116.6 129.54 0)
 		(layer "F.SilkS")
 		(uuid "0b27b508-2ea6-40ff-8978-07be0ae345d4")
 		(effects
@@ -15797,6 +15801,28 @@
 				(thickness 0.15)
 			)
 			(justify left)
+		)
+	)
+	(gr_text "Liz 4174 Terminal Controller v1"
+		(at 146.0 69.6 0)
+		(layer "F.SilkS")
+		(uuid "fc994a09-35fa-433d-a35f-d956d928caff")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.25)
+			)
+		)
+	)
+	(gr_text "quaint-systems"
+		(at 146.0 71.9 0)
+		(layer "F.SilkS")
+		(uuid "532fd8ab-298d-410e-9461-3d7844194844")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
 		)
 	)
 	(gr_text "4"

@@ -5,9 +5,11 @@
 	(uuid "526cd2dc-8794-4bb6-97c2-9b545ee4fe34")
 	(paper "A3")
 	(title_block
-		(title "interface2")
-		(date "2023-09-06")
-		(rev "1")
+		(title "Liz 4174 Terminal Controller")
+		(date "2026-09-26")
+		(rev "v1")
+		(company "quaint-systems")
+		(comment 1 "Based on interface3 Rev 3 by Hans Hübner")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
@@ -9038,7 +9040,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "12132a78-3a29-40bb-a996-2ebd02ae0ce1")
 		(property "Reference" "J4"
@@ -14433,7 +14435,7 @@
 		(at 143.256 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c1a14dc9-d4ef-4311-9f91-aac7b7b5ac3d")
