@@ -4570,7 +4570,7 @@
 				)
 			)
 		)
-		(property "Part" "HMK107B7103KA-T"
+		(property "Part" "EMK107B7104KA-T"
 			(at 249.375 -60.505 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5018,9 +5018,9 @@
 			(uuid "2cf41680-68d0-45a5-a66a-a0cad69dabd5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD6_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_PUSH_6mm_H9.5mm.wrl"
+		(model "${KICAD6_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm_H9.5mm.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -3.25 2.25 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -5960,7 +5960,7 @@
 				)
 			)
 		)
-		(fp_text user "LED_NET"
+		(fp_text user "LED_RX2"
 			(at 13.8 3.148 135)
 			(layer "F.SilkS")
 			(uuid "9968e4f2-e8fc-44cc-9a73-ce1255562d56")
@@ -6125,7 +6125,7 @@
 				)
 			)
 		)
-		(fp_text user "TX3"
+		(fp_text user "RX3"
 			(at -13.1 21.59 135)
 			(layer "F.SilkS")
 			(uuid "77762e26-e393-40ad-a855-5c38a7fc6e49")
@@ -8751,7 +8751,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -8981,7 +8981,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.485 -0.735)
@@ -15222,7 +15222,7 @@
 				)
 			)
 		)
-		(property "Part" "EMK107B7104KA-T"
+		(property "Part" "HMK107B7103KA-T"
 			(at 252.423 -63.553 0)
 			(layer "F.Fab")
 			(hide yes)

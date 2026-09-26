@@ -1,2 +1,4 @@
 pcb-backups/
 gerber/
+.history/
+~*.lck
