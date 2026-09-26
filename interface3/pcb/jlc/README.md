@@ -66,6 +66,8 @@ Before paying, check the placement preview:
 
 If JLC's library holds a part at a different zero orientation, record the correction in `ROTATION_FIX` in `make_jlc.py` and regenerate, rather than editing the CPL.
 
+U1 and U2 carry a 270° correction. With KiCad's rotation of 0°, JLC's preview drew both SOIC-16s lying across their pad columns with pin 1 at the bottom left. The pin-1 dot must end up at the top left, by the silkscreen tick. The LEDs, SW1 and passives needed no correction.
+
 ## Fitted by hand
 
 | Part | Notes |
