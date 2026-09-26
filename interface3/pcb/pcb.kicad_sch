@@ -10567,7 +10567,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4b49e999-3e8f-46bf-bec2-930aff8ba133")
 		(property "Reference" "R22"
 			(at 114.808 210.4136 0)
@@ -15263,7 +15263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "EMK107B7104KA-T"
+		(property "Part" "HMK107B7103KA-T"
 			(at 382.524 234.188 0)
 			(effects
 				(font
@@ -16477,7 +16477,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fd5be888-1fc5-41f8-a492-c751f662213e")
 		(property "Reference" "D10"
 			(at 116.0272 220.7514 90)
@@ -16619,7 +16619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "HMK107B7103KA-T"
+		(property "Part" "EMK107B7104KA-T"
 			(at 395.224 234.188 0)
 			(effects
 				(font
