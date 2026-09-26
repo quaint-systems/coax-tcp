@@ -30,9 +30,14 @@ KICAD_CLI = os.environ.get(
 GERBER_LAYERS = "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts"
 
 # JLC's library may hold a part at a different zero orientation than KiCad's
-# footprint.  Leave this empty until JLC's placement preview shows otherwise,
-# then add the correction in degrees here rather than editing the CPL by hand.
-ROTATION_FIX = {}
+# footprint.  Corrections are in degrees, counter-clockwise, and come from
+# JLC's placement preview rather than from editing the CPL by hand.
+ROTATION_FIX = {
+    # JLC draws its SOIC-16 lying down with pin 1 bottom left; KiCad's stands
+    # upright with pin 1 top left.  Seen in the preview on 2026-09-26.
+    "U1": 270,
+    "U2": 270,
+}
 
 
 def run(*args):
