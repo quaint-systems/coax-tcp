@@ -47,7 +47,7 @@ The script refuses to run if a footprint on the board is missing from `parts.csv
 
 Parts and fees:
 
-- **Extended-part fees:** each unique Extended part carries a feeder fee. U1, U2, SW1, T1/T2, the BNC and the yellow LED are Extended. Making the PWR LED yellow saves a separate green line.
+- **Extended-part fees:** the Economic quote on 2026-09-26 (T1/T2 not placed) charged three Extended-part fees at $3.09, most likely for U1, U2 and SW1. The yellow LED is labelled Extended but carried no fee, and neither did the hand-soldered BNC. The whole order came to $89.77 for 5 assembled boards, before shipping.
 - **Hand-soldered through-hole:** J1 and J2 need JLC's through-hole hand soldering.
 - **U2 stock:** LCSC had only 100 of U2 (C1543778) on 2026-09-26. Buy them into your JLC parts library before ordering. The fallback is C2672589, the DS34LV87TMX/NOPB reel part.
 - **T1 and T2 (Murata 78602/8JC, C7040198):** LCSC had none on 2026-09-26.
